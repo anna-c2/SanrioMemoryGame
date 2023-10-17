@@ -1,0 +1,137 @@
+body {
+  background-image: url("https://img.freepik.com/premium-photo/evoking-tranquility-through-sky-blue-with-soft-white-clouds_954894-1370.jpg");
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Card {
+  border-radius: 5%;
+  width: fit-content;
+  padding: 8px;
+  gap: 5px;
+}
+.card-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 5%;
+  border: 5px solid;
+  border: 1px solid black;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+  margin: auto;
+}
+
+/* .Title{
+  font-size:300px;
+} */
+
+body {
+  font-family: sans-serif;
+}
+
+.scene {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  /*   border: 1px solid #CCC; */
+  perspective: 600px;
+}
+
+.inactiveCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+  border-radius: 5%;
+}
+
+.card__face--front {
+  background: #d7b6db;
+}
+.card__face--front:hover {
+  background: #d4aed8;
+}
+
+.card__face--back {
+  background: slateblue;
+  transform: rotateY(180deg);
+}
+
+.Title {
+  font-size: 50px;
+  color: #707da1;
+}
+
+.startButton {
+  width: 150px;
+  font-size: 30px;
+  border: 3px solid #707da1;
+  border-radius: 5%;
+  color: #707da1;
+  background: #a2afd3;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+}
+.startButton:hover {
+  background: #95a4ca;
+}
+
+.greenBorder {
+  border: 1px solid green;
+}
+
+.topBar {
+  width: 850px;
+  margin: 20px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Lexend", sans-serif;
+}
+
+.timer {
+  font-size: 30px;
+  width: 100px;
+}
+
+.stats {
+  color: #707da1;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
